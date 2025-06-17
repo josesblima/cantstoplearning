@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;700&family=Chakra+Petch:wght@300;400;700&family=IBM+Plex+Mono:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-midnight-background: #0f1020;
+  --color-midnight-text: #d7d7d9;
+  --color-midnight-heading: #f8f8ff;
+  --color-midnight-primary: #ff3864;
+  --color-midnight-secondary: #36eee0;
+  --color-midnight-code: #1a1b36;
+  --color-midnight-border: #252550;
+
+  --font-display: "Orbitron", sans-serif; /* For main headings and hero text */
+  --font-body: "Chakra Petch", sans-serif; /* For body text and paragraphs */
+  --font-accent: "Audiowide", cursive; /* For buttons and accent elements */
+  --font-code:
+    "IBM Plex Mono", monospace; /* For code blocks and monospace text */
+}
+/* Global styles to fix the scrolling and white space issues */
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--color-midnight-background);
+  }
+}
